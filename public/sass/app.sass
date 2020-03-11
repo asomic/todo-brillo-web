@@ -1,0 +1,1997 @@
+/* Todo Brillo Styles
+/* asomic.com 
+/* --------------------------------
+/* --------------------------------
+
+@import reset
+
+// Branding Colors
+$blue: #1F56A7
+$darkBlue: #293578
+$ultraDarkBlue: #092652
+$lightBlue: #BACAE2
+$ultraLightBlue: #F2F5F9
+$grayBlue: #3B4A5F
+$lightGray: #FAFAFA
+$black: #222954
+
+// Gradient
+$gradient-white: linear-gradient(180deg, rgba(248, 248, 248, 0) 32.13%, #F8F8F8 89.57%), url(ashtray-book-cushion-decoration-298842.jpg), #BFFFF0
+
+/* Basics
+body
+    font-family: 'Noto Sans SC'
+    line-height: 1.2
+    font-size: 15px
+    max-width: 100%
+    position: relative
+    // overflow: hidden
+
+/* Typography
+h1, h2, h3, h4, h5, h6
+    font-weight: 900
+    line-height: 130%
+    color: $blue
+
+h1
+    font-size: 22px
+    margin-bottom: 16px
+
+@media (min-width: 768px)
+    h1
+        font-size: 26px
+
+@media (min-width: 900px)
+    h1
+        font-size: 32px
+        margin-bottom: 18px
+
+h2
+    //
+
+h3
+    font-size: 24px
+
+@media (min-width: 768px)
+    h3
+        font-size: 25px
+
+@media (min-width: 900px)
+    h3
+        font-size: 27px
+
+h4
+    font-size: 20px
+
+@media (min-width: 768px)
+    h4
+        font-size: 22px
+
+@media (min-width: 900px)
+    h4
+        font-size: 24px
+
+h5
+    //
+
+h6
+    font-size: 13px
+
+@media (min-width: 900px)
+    h6
+       font-size: 14px
+
+@media (min-width: 900px)
+    h6
+       font-size: 14px
+
+p
+    color: $black
+    line-height: 150%
+    font-size: 14px
+
+@media (min-width: 900px)
+    p
+        font-size: 15px
+
+/* Utilities
+.bg-lightgray
+    background-color: $lightGray
+
+.pd-lr
+    padding:
+        left: 1.4em
+        right: 1.4em
+
+@media (min-width: 768px)
+    .pd-lr
+        padding:
+            left: 2.4em
+            right: 2.4em
+
+@media (min-width: 900px)
+    .pd-lr
+        padding:
+            left: 3em
+            right: 3em
+
+@media (min-width: 1400px)
+    .pd-lr
+        padding:
+            left: 4em
+            right: 4em
+
+@media (min-width: 1600px)
+    .pd-lr
+        padding:
+            left: 10em
+            right: 10em
+
+@media (min-width: 1800px)
+    .pd-lr
+        max-width: 1000px
+        margin-left: auto
+        margin-right: auto
+        padding:
+            left: 0
+            right: 0
+
+/* Hero
+.hero
+    width: 100%
+    height: 100vh
+    background-image: url('../img/hero-back.jpg')
+    background-size: cover
+    background-position: center
+    position: relative
+    z-index: 8
+    box-sizing: border-box
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(#092652, 0.35)
+    .in
+        position: relative
+        z-index: 10
+        text-align: center
+        padding-bottom: 1em
+        width: 100%
+        height: 100%
+        box-sizing: border-box
+        display: flex
+        flex-wrap: wrap
+        align-content: center
+        justify-content: center
+        align-items: center
+        img
+            width: 120px
+            margin-bottom: 0.8em
+        h3
+            color: white
+    .on
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        background-color: black
+        opacity: 0.0
+
+@media (min-width: 768px)
+    .hero
+        &::before
+        .in
+            width: 64%
+            margin-left: auto
+            margin-right: auto
+            img
+            h3
+        .on
+
+@media (min-width: 900px)
+    .hero
+        &::before
+        .in
+            img
+            h3
+        .on
+
+@media (min-width: 1200px)
+    .hero
+        height: 100vh
+        &::before
+        .in
+            width: 60%
+            img
+                width: 180px
+                margin-bottom: 1em
+            h3
+        .on
+
+@media (min-width: 1400px)
+    .hero
+        height: 100vh
+        &::before
+        .in
+            width: 50%
+            img
+            h3
+                width: 100%
+        .on
+
+// @keyframes movearom
+//     0%
+//         top: 120px
+//     100%
+//         top: 0px
+
+// .movearom
+//     animation: movearom 1s ease forwards
+
+/* Aromatizantes
+.aromatizantes
+    width: 100%
+    background-color: $lightGray
+    padding-bottom: 14px
+    .aroma-info
+        .aroma-img
+            height: 36vh
+            background-position: center
+            background-size: cover
+            background-color: $lightBlue
+            transition: all ease 0.3s
+            background-image: url('../img/aromatizantes/brisa-marina.jpg')
+        .aroma-data
+            position: relative
+            z-index: 1
+            padding: 
+                top: 16px
+                // bottom: 26px
+            &::before
+                content: ''
+                height: 100px
+                width: 100%
+                position: absolute
+                top: -20px
+                left: 0
+                right: 0
+                z-index: 2
+                background-size: contain
+                background-repeat: no-repeat
+                background-image: url('../img/curves-1.png')
+            .item-data
+                position: relative
+                z-index: 3
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                margin: auto
+                width: 94%
+                // justify-content: space-between
+                .img
+                    z-index: 1
+                    margin-top: -24vh
+                    width: 100%
+                    // height: 200px
+                    overflow: hidden
+                    height: 420px
+                    // height: 100vw
+                    margin-bottom: 0.4em
+                    text-align: center
+                    position: relative
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-image: url('../img/aromatizantes/6.png')
+                    &:before
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        left: 0
+                        right: 0
+                        background: linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 51%)
+                    img
+                        width: 80%
+                .text
+                    z-index: 2
+                    margin-top: -20%
+                    width: 100%
+                    text-align: center
+                    h1
+                    p
+                    .standard
+                        display: inherit
+                    .brisa-marina
+                    .hawaiian,
+                    .algodon,
+                    .bambu,
+                    .lavanda,
+                    .floral,
+                    .bebe,
+                    .vainilla,
+                    .anti-tabaco
+                        display: none
+        &.hawaiian
+            .aroma-img
+                background-image: url('../img/aromatizantes/hawaii.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/2.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .algodon,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco
+                            display: none
+                        .hawaiian
+                            display: inherit
+        &.algodon
+            .aroma-img
+                background-image: url('../img/aromatizantes/algodon.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/3.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .hawaiian
+                            display: none
+                        .algodon
+                            display: inherit
+        &.bambu
+            .aroma-img
+                background-image: url('../img/aromatizantes/bambu.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/4.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian
+                            display: none
+                        .bambu
+                            display: inherit
+        &.lavanda
+            .aroma-img
+                background-image: url('../img/aromatizantes/lavanda.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/5.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .floral,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu
+                            display: none
+                        .lavanda
+                            display: inherit
+        &.floral
+            .aroma-img
+                background-image: url('../img/aromatizantes/floral.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/1.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .bebe,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda
+                            display: none
+                        .floral
+                            display: inherit
+        &.bebe
+            .aroma-img
+                background-image: url('../img/aromatizantes/bebe.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/7.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .vainilla,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral
+                            display: none
+                        .bebe
+                            display: inherit
+        &.vainilla
+            .aroma-img
+                background-image: url('../img/aromatizantes/vainilla.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/8.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .anti-tabaco,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe
+                            display: none
+                        .vainilla
+                            display: inherit
+        &.anti-tabaco
+            .aroma-img
+                background-image: url('../img/aromatizantes/anti-tabaco.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/9.png')
+                    .text
+                        .standard,
+                        .brisa-marina,
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .vainilla
+                            display: none
+                        .anti-tabaco
+                            display: inherit
+        &.brisa-marina
+            .aroma-img
+                background-image: url('../img/aromatizantes/brisa-marina.jpg')
+            .aroma-data
+                .item-data
+                    .img
+                        background-image: url('../img/aromatizantes/6.png')
+                    .text
+                        .algodon,
+                        .hawaiian,
+                        .bambu,
+                        .lavanda,
+                        .floral,
+                        .bebe,
+                        .anti-tabaco,
+                        .vainilla,
+                        .brisa-marina
+                            display: none
+                        .standard
+                            display: inherit
+    .selector
+        margin:
+            left: auto
+            right: auto
+        width: 100%
+        position: relative
+        height: 170px
+        padding:
+            top: 30px
+            bottom: 28px
+        .swiper-container
+            width: 100%
+            height: 100%
+            .swiper-wrapper
+                .swiper-slide
+                    cursor: pointer
+                    text-align: center
+                    font-size: 18px
+                    background: transparent
+                    display: flex
+                    // align-items: center
+                    flex-wrap: wrap
+                    box-sizing: border-box
+                    justify-content: center
+                    img
+                        height: 65%
+                        margin-bottom: 10px
+                        box-sizing: border-box
+                    h6
+                        box-sizing: border-box
+                        width: 100%
+                        height: 30%
+            .swiper-pagination
+                // top: 10px
+                bottom: 0px
+
+@media (min-width: 768px)
+    .aromatizantes
+        padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+            .aroma-data
+                &::before
+                    top: -60px
+                    // right: 0
+                    background-size: cover
+                .item-data
+                    margin-top: -32%
+                    flex-wrap: nowrap
+                    width: 100%
+                    justify-content: space-between
+                    .img
+                        width: 35%
+                        margin-top: 0
+                        margin-bottom: 0
+                        // height: auto
+                        &:before
+                            display: none
+                        img
+                            width: 60%
+                    .text
+                        align-self: flex-end
+                        width: 64%
+                        padding-right: 20px
+                        text-align: left
+                        box-sizing: border-box
+                        padding-bottom: 1.8em
+                        // width: auto
+                        h1
+                        p
+        .selector
+            width: 86%
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slideenter
+                        img
+                            // height: 65%
+                            // margin-bottom: 10px
+                            // box-sizing: border-box
+                        h6
+                            // box-sizing: border-box
+                            // width: 100%
+                            // height: 30%
+                .swiper-pagination
+            
+
+@media (min-width: 900px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                height: 380px
+            .aroma-data
+                &::before
+                    top: -96px
+                .item-data
+                    margin-top: -30%
+                    width: 80%
+                    .img
+                        height: 480px
+                        &:before
+                        // img
+                        //     width: 64%
+                    .text
+                        h1
+                        p
+        .selector
+            width: 78%
+
+
+@media (min-width: 1200px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                height: 440px
+            .aroma-data
+                &::before
+                    top: -140px
+                    height: 160px
+                    // background-size: cover
+                .item-data
+                    margin-top: -28%
+                    // flex-wrap: nowrap
+                    width: 74%
+                    // justify-content: space-between
+                    .img
+                        height: 500px
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        // height: auto
+                        &:before
+                            // display: none
+                        img
+                            // width: 60%
+                    .text
+                        // align-self: flex-end
+                        width: 62%
+                        // padding-right: 20px
+                        // text-align: left
+                        // box-sizing: border-box
+                        padding-bottom: 2.2em
+                        h1
+                        p
+        .selector
+            width: 66%
+
+
+@media (min-width: 1400px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                // height: 400px
+            .aroma-data
+                &::before
+                    // top: -70px
+                    // background-size: cover
+                .item-data
+                    margin-top: -27%
+                    // flex-wrap: nowrap
+                    width: 74%
+                    // justify-content: space-between
+                    .img
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        height: 520px
+                        &:before
+                            // display: none
+                        img
+                            width: 56%
+                    .text
+                        // align-self: flex-end
+                        width: 62%
+                        // padding-right: 20px
+                        // text-align: left
+                        // box-sizing: border-box
+                        padding-bottom: 2.2em
+                        h1
+                        p
+        .selector
+            width: 100%
+            max-width: 920px
+
+
+@media (min-width: 1600px)
+    .aromatizantes
+        // padding-bottom: 20px
+        .aroma-info
+            .aroma-img
+                height: 480px
+            .aroma-data
+                &.pd-lr
+                    max-width: 100%
+                    padding:
+                        left: 10em
+                        right: 10em
+                &::before
+                    // top: -70px
+                    // background-size: cover
+                .item-data
+                    margin-top: -23%
+                    // flex-wrap: nowrap
+                    width: 74%
+                    // justify-content: space-between
+                    .img
+                        // width: 35%
+                        // margin-top: 0
+                        // margin-bottom: 0
+                        // height: auto
+                        &:before
+                            // display: none
+                        img
+                            width: 48%
+                    .text
+                        // align-self: flex-end
+                        width: 62%
+                        padding-right: 12%
+                        // text-align: left
+                        // box-sizing: border-box
+                        padding-bottom: 2.2em
+                        h1
+                        p
+        .selector
+
+/* Columns: Automatico, Eléctrico, Lustramuebles, Renovadores
+.columns
+    .column
+        background-color: $lightGray
+        .header
+            width: 100%
+            height: 320px
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 100%
+                z-index: 1
+                background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            .img
+                z-index: 1
+                width: 210px
+                height: 240px
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                transition: all ease 0.3s
+                // background-image: url('../img/automaticos/1.png')
+            img
+                position: relative
+                z-index: 2
+                margin-bottom: 12px
+                // width: 54%
+                height: 240px
+        .body
+            padding-bottom: 46px
+            .selector
+                position: relative
+                margin-top: 14px
+                .in
+                    display: flex
+                    margin: auto
+                    // max-width: 65%
+                    max-width: 90%
+                    flex-wrap: nowrap
+                    align-content: center
+                    justify-content: space-between
+                    // overflow-x: scroll
+                    // overflow-y: hidden
+                    padding:
+                        top: 20px
+                        bottom: 24px
+                    width: auto
+                    background-color: $lightGray
+                    position: relative
+                    // z-index: 2
+                    // -ms-overflow-style: none
+                    // overflow: -moz-scrollbars-none
+                    // &::-webkit-scrollbar
+                    //     display: none
+                    //     width: 0 !important
+                    //     background: transparent !important
+                    outline: none
+                    .item
+                        // z-index: 2
+                        cursor: pointer
+                        // padding:
+                        //     left: 38px
+                        //     right: 38px
+                        z-index: 99
+                        width: 20%
+                        text-align: center
+                        box-sizing: border-box
+                        position: relative
+                        .name
+                            opacity: 0
+                            visibility: hidden
+                            position: absolute
+                            left: 0
+                            right: 0
+                            margin: auto
+                            bottom: 46px
+                            padding: 6px
+                            border-radius: 3px
+                            z-index: 4
+                            background-color: $grayBlue
+                            transition: all ease 0.3s
+                            &::before
+                                content: ''
+                                position: absolute
+                                margin: auto
+                                left: 0
+                                right: 0
+                                width: 10px
+                                height: 10px
+                                background-color: $grayBlue
+                                bottom: -4px
+                                z-index: -1
+                                transform: rotate(-45deg)
+                            p
+                                width: auto
+                                color: white
+                                text-align: center
+                                font-size: 12px
+                                line-height: 110%
+                            // display: none
+                        &:hover,
+                        &:focus
+                            .name
+                                opacity: 1
+                                visibility: visible
+                        img
+                            // max-width: 100%
+                            height: 24px
+                            margin-bottom: 6px
+                        // &:first-child
+                        //     padding-left: 56px
+                        // &:last-child
+                        //     padding-right: 72px
+            .data
+                text-align: center
+                margin: auto
+                width: 84%
+                h4
+                    margin-bottom: 16px
+                p
+        &.automatico
+            .header
+                img
+                    margin-left: -6px
+                .img
+                    background-image: url('../img/automaticos/1.png')
+                    &.a-lavanda
+                        background-image: url('../img/automaticos/item-lavanda.png')
+                    &.a-manzana
+                        background-image: url('../img/automaticos/item-manzana.png')
+                    &.a-bebe
+                        background-image: url('../img/automaticos/item-bebe.png')
+                    &.a-brisa
+                        background-image: url('../img/automaticos/item-brisa.png')
+                .badges
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    &::before
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        top: -5%
+                        left: 142px
+                        right: 0
+                        margin: auto
+                        width: 100px
+                        height: 100px
+                        margin-top: 14%
+                        background-color: transparent
+                        background-image: url('../img/automaticos/disparos.png')
+                        background-position: center
+                        background-size: cover
+                    &::after
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        width: 60px
+                        height: 60px
+                        margin: auto
+                        bottom: 0
+                        right: 0
+                        left: 0
+                        // margin-top: 14%
+                        background-color: transparent
+                        background-image: url('../img/automaticos/dias.png')
+                        background-position: center
+                        background-size: cover
+        &.electricos
+            .header
+                img
+                .img
+                    background-image: url('../img/electricos/1.png')
+                    &.e-lavanda
+                        background-image: url('../img/electricos/item-lavanda.png')
+                    &.e-manzana
+                        background-image: url('../img/electricos/item-manzana.png')
+                    &.e-bebe
+                        background-image: url('../img/electricos/item-bebe.png')
+                    &.e-brisa
+                        background-image: url('../img/electricos/item-brisa.png')
+                .badges
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    &::before
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        width: 105px
+                        height: 67px
+                        margin: auto
+                        right: 0
+                        left: 190px
+                        // right: 18vw
+                        // right: 18%
+                        top: 17%
+                        background-color: transparent
+                        background-image: url('../img/electricos/aceites-naturales.png')
+                        background-position: center
+                        background-size: cover
+                    &::after
+                        content: ''
+                        z-index: 2
+                        position: absolute
+                        width: 200px
+                        height: 174px
+                        margin: auto
+                        bottom: -52px
+                        right: 0
+                        left: 0
+                        // margin-top: 14%
+                        background-color: transparent
+                        background-image: url('../img/electricos/sensaciones.png')
+                        background-position: center
+                        background-size: cover
+
+@media (min-width: 768px)
+    .columns
+        display: flex
+        .column
+            width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                // height: 320px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    // height: 240px
+            .body
+                padding-bottom: 52px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        padding:
+                            top: 24px
+                            bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 74%
+                    h4
+                        // margin-bottom: 14px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+@media (min-width: 800px)
+    .columns
+        .column
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+@media (min-width: 900px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                // height: 320px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    // height: 240px
+            .body
+                padding-bottom: 62px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 70%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 70%
+                    h4
+                        margin-bottom: 18px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: -10%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+
+@media (min-width: 1200px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                height: 380px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    height: 280px
+            .body
+                padding-bottom: 76px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 66%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 60%
+                    h4
+                        // margin-bottom: 18px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                             top: 0%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: 27%
+                        &::after
+
+@media (min-width: 1440px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                // height: 380px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    height: 280px
+            .body
+                padding-bottom: 76px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 48%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 60%
+                    h4
+                        // margin-bottom: 18px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: -2%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+@media (min-width: 1600px)
+    .columns
+        // display: flex
+        .column
+            // width: 50%
+            // background-color: $lightGray
+            .header
+                // width: 100%
+                // height: 420px
+                // position: relative
+                // display: flex
+                // justify-content: center
+                // align-items: flex-end
+                // background-position: center
+                // background-size: cover
+                // background-repeat: no-repeat
+                &::before
+                    // content: ''
+                    // position: absolute
+                    // width: 100%
+                    // height: 100%
+                    // z-index: 1
+                    // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+                img
+                    // position: relative
+                    // z-index: 2
+                    // margin-bottom: 12px
+                    // // width: 54%
+                    height: 280px
+            .body
+                padding-bottom: 76px
+                .selector
+                    // position: relative
+                    &::before
+                        // position: absolute
+                        // content: '‣'
+                        // color: black
+                        // display: flex
+                        // justify-content: flex-start
+                        // padding-top: 1%
+                        // padding-left: 6px
+                        // font-size: 46px
+                        // cursor: pointer
+                        // right: 0
+                        // width: 36px
+                        // height: 100%
+                        // background: linear-gradient(266deg, rgba(250,250,250,1) 27%, rgba(250,250,250,0) 100%)
+                        // z-index: 3
+                    .in
+                        max-width: 48%
+                        // display: flex
+                        // flex-wrap: nowrap
+                        // align-content: center
+                        // justify-content: flex-start
+                        // overflow-x: scroll
+                        // overflow-y: hidden
+                        // padding:
+                        //     top: 24px
+                        //     bottom: 26px
+                        // width: auto
+                        // background-color: $lightGray
+                        // position: relative
+                        // z-index: 2
+                        // -ms-overflow-style: none
+                        // overflow: -moz-scrollbars-none
+                        &::-webkit-scrollbar
+                            // display: none
+                            // width: 0 !important
+                            // background: transparent !important
+                        .item
+                            // z-index: 2
+                            // cursor: pointer
+                            // padding:
+                            //     left: 38px
+                            //     right: 38px
+                            // text-align: center
+                            // box-sizing: border-box
+                            img
+                                // max-width: 100%
+                                // height: 28px
+                                // margin-bottom: 6px
+                            &:first-child
+                                // padding-left: 56px
+                            &:last-child
+                                // padding-right: 72px
+                .data
+                    // text-align: center
+                    // margin: auto
+                    width: 60%
+                    h4
+                        // margin-bottom: 18px
+                    p
+            &.automatico
+                .header
+                    img
+                    .badges
+                        &::before
+                            top: -4%
+                        &::after
+            &.electricos
+                .header
+                    img
+                    .badges
+                        &::before
+                        &::after
+
+/* Desinfectantes
+.desinfectantes
+    background-color: $lightGray
+    .img
+        width: 100%
+        height: 220px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        position: relative
+        z-index: 2
+        &::before
+            content: ''
+            height: 40px
+            width: 100%
+            position: absolute
+            background-size: cover
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 2
+            background-repeat: no-repeat
+            background-image: url('../img/curves-1.png')
+    .data
+        position: relative
+        text-align: center
+        margin: auto
+        width: 80%
+        position: relative
+        margin-top: -110px
+        padding-bottom: 48px
+        z-index: 3
+        img
+            width: 90%
+            margin-bottom: 18px
+        h1
+        p
+
+@media (min-width: 768px)
+    .desinfectantes
+        // background-color: $lightGray
+        .img
+            // width: 100%
+            height: 300px
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            // position: relative
+            // z-index: 2
+            &::before
+                // content: ''
+                // height: 40px
+                // width: 100%
+                // position: absolute
+                // background-size: cover
+                // bottom: 0
+                // left: 0
+                // right: 0
+                // z-index: 2
+                // background-repeat: no-repeat
+                // background-image: url('../img/curves-1.png')
+        .data
+            // position: relative
+            // text-align: center
+            // margin: auto
+            width: 64%
+            // position: relative
+            margin-top: -140px
+            padding-bottom: 52px
+            // z-index: 3
+            img
+                width: 80%
+                // margin-bottom: 18px
+            h1
+            p
+
+@media (min-width: 900px)
+    .desinfectantes
+        // background-color: $lightGray
+        .img
+            // width: 100%
+            height: 350px
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            // position: relative
+            // z-index: 2
+            &::before
+                // content: ''
+                // height: 40px
+                // width: 100%
+                // position: absolute
+                // background-size: cover
+                // bottom: 0
+                // left: 0
+                // right: 0
+                // z-index: 2
+                // background-repeat: no-repeat
+                // background-image: url('../img/curves-1.png')
+        .data
+            // position: relative
+            // text-align: center
+            // margin: auto
+            width: 55%
+            // position: relative
+            margin-top: -190px
+            padding-bottom: 72px
+            // z-index: 3
+            img
+                width: 80%
+                margin-bottom: 20px
+            h1
+            p
+
+@media (min-width: 1200px)
+    .desinfectantes
+        // background-color: $lightGray
+        .img
+            // width: 100%
+            height: 420px
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            // position: relative
+            // z-index: 2
+            &::before
+                // content: ''
+                height: 70px
+                // width: 100%
+                // position: absolute
+                // background-size: cover
+                // bottom: 0
+                // left: 0
+                // right: 0
+                // z-index: 2
+                // background-repeat: no-repeat
+                // background-image: url('../img/curves-1.png')
+        .data
+            // position: relative
+            // text-align: center
+            // margin: auto
+            width: 45%
+            // position: relative
+            margin-top: -240px
+            padding-bottom: 78px
+            // z-index: 3
+            img
+                width: 96%
+                margin-bottom: 30px
+            h1
+            p
+
+/* Productos Líderes
+.lideres
+    background-color: $lightGray
+    .header
+        width: 100%
+        height: 260px
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            z-index: 1
+            background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+        img
+            position: relative
+            z-index: 2
+            margin-bottom: 22px
+            height: 170px
+    .body
+        text-align: center
+        padding-bottom: 48px
+        h1
+        p
+
+@media (min-width: 768px)
+    .lideres
+        // background-color: $lightGray
+        .header
+            // width: 100%
+            height: 380px
+            // position: relative
+            // display: flex
+            // justify-content: center
+            // align-items: flex-end
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            &::before
+                // content: ''
+                // position: absolute
+                // width: 100%
+                // height: 100%
+                // z-index: 1
+                // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                // position: relative
+                // z-index: 2
+                // margin-bottom: 22px
+                height: 260px
+        .body
+            width: 70%
+            padding-bottom: 52px
+            margin:
+                left: auto
+                right: auto
+            // text-align: center
+            // padding-bottom: 48px
+            h1
+            p
+
+@media (min-width: 900px)
+    .lideres
+        // background-color: $lightGray
+        .header
+            // width: 100%
+            // height: 380px
+            // position: relative
+            // display: flex
+            // justify-content: center
+            // align-items: flex-end
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            &::before
+                // content: ''
+                // position: absolute
+                // width: 100%
+                // height: 100%
+                // z-index: 1
+                // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                // position: relative
+                // z-index: 2
+                // margin-bottom: 22px
+                height: 260px
+        .body
+            width: 50%
+            padding-bottom: 56px
+            // margin:
+            //     left: auto
+            //     right: auto
+            // text-align: center
+            // padding-bottom: 48px
+            h1
+            p
+
+@media (min-width: 1200px)
+    .lideres
+        // background-color: $lightGray
+        .header
+            // width: 100%
+            height: 500px
+            // position: relative
+            // display: flex
+            // justify-content: center
+            // align-items: flex-end
+            // background-position: center
+            // background-size: cover
+            // background-repeat: no-repeat
+            &::before
+                // content: ''
+                // position: absolute
+                // width: 100%
+                // height: 100%
+                // z-index: 1
+                // background: linear-gradient(180deg, rgba(250, 250, 250, 0) 33.43%, #FAFAFA 88.16%)
+            img
+                // position: relative
+                // z-index: 2
+                // margin-bottom: 22px
+                height: 320px
+        .body
+            width: 45%
+            padding-bottom: 74px
+            // margin:
+            //     left: auto
+            //     right: auto
+            // text-align: center
+            // padding-bottom: 48px
+            h1
+            p
+
+/* Contacto
+.contacto
+    background-color: $ultraLightBlue
+    padding:
+        top: 48px
+        bottom: 40px
+    .in
+        .data
+            margin-bottom: 24px
+            text-align: center
+            h1
+            p
+        .form
+            form
+                input, textarea
+                    background-color: transparent
+                    outline: none
+                    appearance: none
+                    box-shadow: none
+                    border-radius: 2px
+                    border: solid 1px $darkBlue
+                    padding: 8px 14px
+                    width: 100%
+                    font-size: 14px
+                    color: #8387A3
+                    margin-bottom: 6px
+                    box-sizing: border-box
+                    &::-webkit-input-placeholder
+                    &:-ms-input-placeholder
+                    &::placeholder
+                        color: #8387A3
+                input[type="submit"]
+                    background-color: $blue
+                    border: solid 1px $blue
+                    color: white
+                    cursor: pointer
+                    font-weight: 900
+                textarea
+                    height: 120px
+
+@media (min-width: 768px)
+    .contacto
+        // background-color: $ultraLightBlue
+        padding:
+            top: 60px
+            bottom: 42px
+        .in
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            .data
+                width: 30%
+                // margin-bottom: 24px
+                text-align: left
+                h1
+                p
+            .form
+                width: 60%
+                form
+                    display: flex
+                    justify-content: space-between
+                    flex-wrap: wrap
+                    input, textarea
+                        font-family: inherit
+                        // background-color: transparent
+                        // outline: none
+                        // appearance: none
+                        // box-shadow: none
+                        // border-radius: 2px
+                        // border: solid 1px $darkBlue
+                        // padding: 8px 14px
+                        // width: 100%
+                        // font-size: 14px
+                        // color: #8387A3
+                        margin-bottom: 10px
+                        // box-sizing: border-box
+                        &::-webkit-input-placeholder
+                        &:-ms-input-placeholder
+                        &::placeholder
+                        //     color: #8387A3
+                    input
+                        width: 49%
+                    input[type="submit"]
+                        width: 100%
+                        // background-color: $blue
+                        // border: solid 1px $blue
+                        // color: white
+                        // font-weight: 900
+                    textarea
+                        width: 100%
+                        height: 100px
+
+@media (min-width: 900px)
+    .contacto
+        // background-color: $ultraLightBlue
+        // padding:
+            // top: 60px
+            // bottom: 42px
+        .in
+            // display: flex
+            // justify-content: space-between
+            // flex-wrap: wrap
+            width: 84%
+            margin:
+                left: auto
+                right: auto
+            .data
+                // width: 30%
+                // margin-bottom: 24px
+                // text-align: left
+                h1
+                p
+            .form
+                // width: 60%
+                form
+                    // display: flex
+                    // justify-content: space-between
+                    // flex-wrap: wrap
+                    input, textarea
+                        // font-family: inherit
+                        // background-color: transparent
+                        // outline: none
+                        // appearance: none
+                        // box-shadow: none
+                        // border-radius: 2px
+                        // border: solid 1px $darkBlue
+                        // padding: 8px 14px
+                        // width: 100%
+                        // font-size: 14px
+                        // color: #8387A3
+                        // margin-bottom: 10px
+                        // box-sizing: border-box
+                        &::-webkit-input-placeholder
+                        &:-ms-input-placeholder
+                        &::placeholder
+                        //     color: #8387A3
+                    input
+                        // width: 49%
+                    input[type="submit"]
+                        // width: 100%
+                        // background-color: $blue
+                        // border: solid 1px $blue
+                        // color: white
+                        // font-weight: 900
+                    textarea
+                        // width: 100%
+                        // height: 100px
+
+@media (min-width: 1200px)
+    .contacto
+        // background-color: $ultraLightBlue
+        padding:
+            top: 72px
+            bottom: 50px
+        .in
+            // display: flex
+            // justify-content: space-between
+            // flex-wrap: wrap
+            width: 74%
+            // margin:
+            //     left: auto
+            //     right: auto
+            .data
+                width: 32%
+                // margin-bottom: 24px
+                // text-align: left
+                h1
+                p
+            .form
+                width: 55%
+                form
+                    // display: flex
+                    // justify-content: space-between
+                    // flex-wrap: wrap
+                    input, textarea
+                        // font-family: inherit
+                        // background-color: transparent
+                        // outline: none
+                        // appearance: none
+                        // box-shadow: none
+                        // border-radius: 2px
+                        // border: solid 1px $darkBlue
+                        // padding: 8px 14px
+                        // width: 100%
+                        // font-size: 14px
+                        // color: #8387A3
+                        // margin-bottom: 10px
+                        // box-sizing: border-box
+                        &::-webkit-input-placeholder
+                        &:-ms-input-placeholder
+                        &::placeholder
+                        //     color: #8387A3
+                    input
+                        // width: 49%
+                    input[type="submit"]
+                        // width: 100%
+                        // background-color: $blue
+                        // border: solid 1px $blue
+                        // color: white
+                        // font-weight: 900
+                    textarea
+                        // width: 100%
+                        height: 140px
+// 
+/* Footer
+footer
+    background-color: $grayBlue
+    p
+        color: $lightBlue
+        text-align: center
+        padding: 16px 0
+        font-size: 12px
