@@ -12,8 +12,6 @@
     <p>Email: {{$data['mail']}}</p>
     <p>Empresa: {{$data['company']}}</p>
     <p>Direccion: {{$data['address']}}</p>
-
-
     <p>Mensaje: {{$data['message']}}</p>
 
 
