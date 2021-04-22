@@ -31,7 +31,7 @@ class ContactMail extends Mailable
      public function build()
      {
 
-        return $this->view('mail.contact')->subject('Correo de un nuevo cliente');
+        return $this->view('mail.contact')->subject('Correo desde Todo Brillo');
 
     // dd($this->data);
     //   return $this->view('mail.contact');

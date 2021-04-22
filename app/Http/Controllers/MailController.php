@@ -20,7 +20,7 @@ class MailController extends Controller
 //         // "address" => "asda"
 // dd($request->input());
 
-      Mail::to("trindamorales@gmail.com")->send(new ContactMail($request->input()));
+      Mail::to("contacto@qu2000.cl")->send(new ContactMail($request->input()));
 
 
       if (Mail::failures()) {

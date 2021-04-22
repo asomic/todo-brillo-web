@@ -9,7 +9,8 @@
         <div class="in pd-lr">
             <img src="{{asset('/img//logo.png')}}" alt="Todo Brillo">
             <h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                {{-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. --}}
+                Explora sensaciones y nuevas fragancias
             </h3>
         </div>
         <div class="on"></div>
@@ -24,40 +25,58 @@
                     </div>
                     <div class="text">
                         <div class="standard">
-                            <h1>Brisa Marina loem ipsum dolorem sit amet</h1>
-                            <p>Brisa Marina Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="hawaiian">
-                            <h1>Hawaiian loem ipsum dolorem sit amet</h1>
-                            <p>Hawaiian Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="algodon">
-                            <h1>Algodón loem ipsum dolorem sit amet</h1>
-                            <p>Algodón Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="bambu">
-                            <h1>Bambú loem ipsum dolorem sit amet</h1>
-                            <p>Bambú Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="lavanda">
-                            <h1>Lavanda loem ipsum dolorem sit amet</h1>
-                            <p>Lavanda Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="floral">
-                            <h1>Floral loem ipsum dolorem sit amet</h1>
-                            <p>Floral Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="bebe">
-                            <h1>Bebé loem ipsum dolorem sit amet</h1>
-                            <p>Bebé Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="vainilla">
-                            <h1>Vainilla loem ipsum dolorem sit amet</h1>
-                            <p>Vainilla Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                         <div class="anti-tabaco">
-                            <h1>Anti Tabaco loem ipsum dolorem sit amet</h1>
-                            <p>Anti Tabaco Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, magni nemo. Aut, cupiditate ab odio libero facere cumque voluptatum alias ipsa veniam nostrum voluptate, repellat quibusdam deserunt error, quos cum!</p>
+                            <h1>Desodorante ambiental</h1>
+                            <p>
+                                Deja que los aromatizantes ambientales Todo Brillo dejen fuera de tu hogar los olores fuertes y refresquen al instante cada espacio donde los utilizas. Su intensa fragancia permitirá una larga duración y permanencia del olor en el aire. Pruébalos en todos sus aromas y transpórtate a un ambiente diferente sin salir de casa. 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -140,8 +159,12 @@
                     </div>
                 </div>
                 <div class="data pd-lr">
-                    <h4>Este es un mensaje que tiene que ver con el producto.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+                    <h4>
+                        Desodorante ambiental automático
+                    </h4>
+                    <p>
+                        Despreocúpate y haz que tu vida sea más fácil con el aromatizante ambiental automático de Todo Brillo. Con capacidad de 2500 disparos y una duración aproximada de 60 días te asegura un ambiente fresco y sin malos olores
+                    </p>
                 </div>
             </div>
         </section>
@@ -174,8 +197,12 @@
                     </div>
                 </div>
                 <div class="data pd-lr">
-                    <h4>Este es un mensaje que tiene que ver con el producto.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+                    <h4>
+                        Desodorante ambiental eléctrico
+                    </h4>
+                    <p>
+                        Aromatizante Todo Brillo eléctrico llega para automatizar tu hogar y darle toques de frescura al espacio que tu elijas, gracias a su formato que permite alta movilidad y duración de 75 días. Contiene aceites naturales que junto a la variedad de aromas disponibles te harán experimentar nuevas sensaciones en tu hogar.
+                    </p>
                 </div>
             </div>
         </section>
@@ -185,8 +212,10 @@
         <div class="img" style="background-image: url('{{asset('/img/es-backs/bath-back.jpg')}}');"></div>
         <div class="data pd-lr">
             <img src="{{asset('/img/desinfectantes/1.png')}}">
-            <h1>Pronto llega la nueva linea de desinfectantes.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+            <h1>Pronto llega la nueva linea de desinfectantes</h1>
+            <p>
+                Mantén a tu familia fuera del alcance de microbios, la nueva línea de desinfectantes Todo Brillo promete proteger tu hogar y eliminar el 99,9% de virus y bacterias, dejando exquisitas fragancias en el proceso.
+            </p>
         </div>
     </section>
     <!-- Division dos columnas -->
@@ -198,8 +227,10 @@
             </div>
             <div class="body">
                 <div class="data pd-lr">
-                    <h4>Este es un mensaje que tiene que ver con el producto.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+                    <h4>Lustra muebles</h4>
+                    <p>
+                        Lustra muebles Todo Brillo te asegura protección y eficacia al momento de cuidar tu hogar, su intensa fórmula embellece y deja reluciente todo a su alcance. 
+                    </p>
                 </div>
             </div>
         </section>
@@ -210,8 +241,10 @@
             </div>
             <div class="body">
                 <div class="data pd-lr">
-                    <h4>Este es un mensaje que tiene que ver con el producto.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+                    <h4>Renovador de Gomas</h4>
+                    <p>
+                        Haz que tu automóvil luzca como se merece, el Renovador de Gomas Todo Brillo mantendrá impecable cada rincón, desde neumáticos hasta parachoques, entregando el toque de renovación que necesitas. 
+                    </p>
                 </div>
             </div>
         </section>
@@ -223,7 +256,9 @@
         </div>
         <div class="body pd-lr">
             <h1>Productos líderes en Latino América ahora llegan a Chile</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+            <p>
+                Nos acredita una larga experiencia en el mercado, hoy en día estamos posicionados en Bolivia y Chile con miras de expansión. Descubre nuestros productos y comprueba su calidad.  
+            </p>
         </div>
     </section>
     <!-- Contacto -->
@@ -231,7 +266,9 @@
         <div class="in pd-lr">
             <div class="data">
                 <h1>Sé nuestro distribuidor</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor placerat purus quis semper. Aliquam sed dapibus mi. Praesent nulla sem, fermentum vel nisl a.</p>
+                <p>
+                    Contamos con convenios especiales para expandir tu negocio, escríbenos y se parte de Todo Brillo Chile.
+                </p>
             </div>
 
 
